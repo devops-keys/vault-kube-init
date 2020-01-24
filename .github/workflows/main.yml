@@ -1,5 +1,0 @@
-- name: Docker Push
-  uses: opspresso/action-docker@v0.2.2
-  with:
-    # Your Docker Registry Type.
-    registry-type: # optional, default is --docker
