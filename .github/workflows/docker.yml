@@ -1,0 +1,13 @@
+- name: Docker Action
+  uses: zenato/docker-action@v1.0.0
+  with:
+    # Registry username
+    username: devops-keys
+    # Registry password
+    password: testing
+    # Repository on registry
+    repository: devopskeys
+    # Registry hostname
+    registry: # optional
+    # Image tag
+    tag: # optional
