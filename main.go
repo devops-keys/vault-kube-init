@@ -31,7 +31,7 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	resp, err := http.Post("http://127.0.0.1:8200/v1/auth/kubernetes/login", "application/json", bytes.NewBuffer(bytesRepresentation))
+	resp, err := http.Post(os.Getenv("VAULT_ADDR")+"/v1/auth/kubernetes/login", "application/json", bytes.NewBuffer(bytesRepresentation))
 	if err != nil {
 		log.Fatalln(err)
 	}
